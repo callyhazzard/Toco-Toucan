@@ -1,0 +1,129 @@
+body{
+  font-family: 'Open Sans', arial, sans-serif;
+  margin: 0;
+}
+p{
+  line-height: 1.4;
+}
+.wrapper{
+  width:90%;
+  margin:auto;
+}
+nav ul{
+  text-align: center;
+  list-style-type: none;
+}
+a{
+  color:#db531f;
+}
+nav a{
+  display: block;
+  padding:20px;
+  text-decoration: none;
+  color:#db531f;
+  font-family: 'Cabin', sans-serif;
+}
+  nav a:hover{
+    text-decoration: underline;
+  }
+img{
+  width: 100%;
+}
+#logo{
+  max-width:200px;
+  display: block;
+  margin-bottom: 20px;
+}
+h1,h2,h3{
+  font-family: 'Cabin', sans-serif;
+}
+h1{
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  font-size: 2em;
+  text-align: center;
+}
+figure{
+	margin: auto 0;
+	position: relative;
+}
+figcaption{
+  font-family: "gill sans",sans-serif;
+	position: absolute;
+	bottom:5px;
+	background: rgba(85,85,85,0.70);
+	height: 35px;
+	width: 96%;
+	color:white;
+	padding:2%;
+}
+/* style caption to be on top of the figure */
+#size{
+  max-width: 160px;
+}
+.photographer{
+  border:3px solid #ffcc00;
+  padding:20px;
+
+}
+.link{
+  color: #db531f;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.photographer img{
+  float: left;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+footer{
+  margin-top: 20px;
+  padding:10px;
+  background: #999;
+  text-align: center;
+}
+#facebook, #twitter, #instagram{
+  background: url(images/social.png) -9px -7px;
+  height:36px;
+  width:36px;
+  display:inline-block;
+}
+#twitter{
+  background-position: -62px -8px;
+}
+#instagram{
+background-position: -115px -8px;
+}
+
+
+/* Desktop styles below */
+@media only screen and (min-width: 700px) {
+  .wrapper{
+    width:85%;
+    margin:auto;
+  }
+}
+  nav li{
+    display: inline-block;
+  }
+  .float{
+      float:left;
+      width:43%;
+      padding:2%;
+      margin-right:2%;
+  }
+  .clearfix {
+    clear: both;
+    /*display: table; */
+  }
+  .clearfix::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+}
