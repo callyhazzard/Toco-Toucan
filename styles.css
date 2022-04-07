@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   font-family: 'Open Sans', arial, sans-serif;
   margin: 0;
@@ -113,6 +116,42 @@ background-position: -115px -8px;
   }
 }
 /* ENVIORONMENT STYLES END HERE */
+/*CONTACT PAGE STYLES HERE*/
+.contact-form{
+}
+.contact-form input{
+  font-size:1.1em;
+  height: 28px;
+  padding-left: 8px;
+}
+.contact-form input, .contact-form textarea{
+  display:block;
+  width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  border:1px grey solid;
+  border-radius:3px;
+  font-size:1.1em;
+}
+.contact-form textarea{
+  display:block;
+  height:100px;
+  max-width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.contact-form input[type="submit"]{
+  background-color: lightblue;
+  border:none;
+  padding-top:5px;
+  padding-bottom:10px;
+  width:150px;
+  height:50px;
+  margin-left:auto;
+}
+
+
+/*CONTACT PAGE STYLES END HERE*/
 /* Desktop styles below */
 @media only screen and (min-width: 700px) {
   .wrapper{
