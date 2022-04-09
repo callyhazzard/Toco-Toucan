@@ -1,181 +1,162 @@
-*{
-  box-sizing: border-box;
-}
 body{
-  font-family: 'Open Sans', arial, sans-serif;
-  margin: 0;
+margin:0;
+padding:0;
+font-size:16px;
+  /*base font size*/
+font-family: Helvetica, sans-serif;
+background-color: #6d6e73;
+line-height: 1.1em;
+color: black;
 }
-p{
-  line-height: 1.4;
+header{
+  width:100%;
+  background-color:white;
+}
+header img{
+  height:100px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+img{
+  max-width:100%;
+  /* i can use max-width:100% also */
+  background:url("logo.jpg");
+  /* remove height when I have an image */
+  display: center;
+
+}
+nav{
+  background-color:;
+  text-align: center;
+  margin:10px;
+  padding-top:auto;
+}
+nav a{
+  padding:10px;
+  margin:5px;
+  color:#397d7c;
+  text-decoration:none;
+  font-size: 1.5em;
+}
+nav a:hover{
+  color:#62d6d9;
+  text-decoration:;
+}
+h4{
+  color:
 }
 .wrapper{
   width:90%;
-  margin:auto;
-}
-nav ul{
-  text-align: center;
-  list-style-type: none;
-}
-a{
-  color:#db531f;
-}
-nav a{
-  display: block;
-  padding:20px;
-  text-decoration: none;
-  color:#db531f;
-  font-family: 'Cabin', sans-serif;
-}
-  nav a:hover{
-    text-decoration: underline;
-  }
-img{
-  width: 100%;
-}
-#logo{
-  max-width:200px;
-  display: block;
-  margin-bottom: 20px;
-}
-h1,h2,h3{
-  font-family: 'Cabin', sans-serif;
-}
-h1{
-  font-weight: 600;
-  letter-spacing: 3.5px;
-  font-size: 2em;
-  text-align: center;
-}
-figure{
-	margin: auto 0;
-	position: relative;
-}
-figcaption{
-  font-family: "gill sans",sans-serif;
-	position: absolute;
-	bottom:5px;
-	background: rgba(85,85,85,0.70);
-	height: 35px;
-	width: 96%;
-	color:white;
-	padding:2%;
-}
-/* style caption to be on top of the figure */
-#size{
-  max-width: 160px;
-}
-.joel{
-  border:3px solid #ffcc00;
-  padding:20px;
-}
-.link{
-  color: #db531f;
-}
-.link:hover{
-  text-decoration: underline;
-}
-.joel img{
-  float: left;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-footer{
-  margin-top: 20px;
+  margin: auto;
+  margin-top: 1.1em;
   padding:10px;
-  background: #999;
-  text-align: center;
+  background-color: white;
 }
-#facebook, #twitter, #instagram{
-  background: url(images/social.png) -9px -7px;
-  height:36px;
-  width:36px;
-  display:inline-block;
+
+.hero{
+  width: 100%;
+  background:url("giftlarge2.jpg");
+  height:400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-#twitter{
-  background-position: -62px -8px;
+.hero h2{
+  position: absolute;
+  color:white;
+  top:40%;
+  right:15%;
+  font-family: 'Saira Condensed', Helvetica, sans-serif;
 }
-#instagram{
-background-position: -115px -8px;
+.caption{
+  color:#397d7c;
+  align: center;
 }
-/* ENVIORONMENT STYLES HERE */
-.jakob{
-  border:3px solid #ffcc00;
-  padding:20px;
+.search input{
+  width: 325px;
+  display:horizontal center;
 }
-.jakob img{
-  float: left;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin-right: 30px;
-  }
-.something{
-  color:deeppink;
-  }
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
 }
-/* ENVIORONMENT STYLES END HERE */
-/*CONTACT PAGE STYLES HERE*/
+/*STYLES FOR CONTACT PAGE*/
 .contact-form{
+  width:340px;
+  height:440px;
+  background:#6d6e73;
+  border-radius:8px;
+  box-shadow:0 0 30px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
 }
-.contact-form input{
-  font-size:1.1em;
-  height: 28px;
-  padding-left: 8px;
-}
-.contact-form input, .contact-form textarea{
-  display:block;
-  width:100%;
-  margin-top:10px;
-  margin-bottom:10px;
-  border:1px grey solid;
-  border-radius:3px;
-  font-size:1.1em;
-}
-.contact-form textarea{
-  display:block;
-  height:100px;
-  max-width:100%;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-.contact-form input[type="submit"]{
-  background-color: lightblue;
-  border:none;
-  padding-top:5px;
+.contact-form h2{
+  margin:10px 0;
   padding-bottom:10px;
-  width:150px;
-  height:50px;
-  margin-left:auto;
+  width:180px;
+  color:white;
+  border-bottom:3px solid #78788c
 }
-
-
-/*CONTACT PAGE STYLES END HERE*/
-/* Desktop styles below */
-@media only screen and (min-width: 700px) {
-  .wrapper{
-    width:85%;
-    margin:auto;
-  }
-}
-  nav li{
-    display: inline-block;
-  }
-  .float{
-      float:left;
-      width:43%;
-      padding:2%;
-      margin-right:2%;
-  }
-  .clearfix {
-    clear: both;
-    /*display: table; */
-  }
-  .clearfix::after{
-    clear: both;
-    display: table;
-    content: "";
-  }
+button{
+  background-color:white;
+  border-radius:3px;
+  padding-auto:10px;
 
 }
+/*
+input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2
+}
+input:focus{
+  border-bottom:2px solid #78788c
+}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+button{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;border:2px solid #78788c;
+  background:0;color:#5a5a6e;
+  cursor:pointer;transition:all .3s
+}
+button:hover{
+  background:#78788c;
+  color:#fff
+}
+div{
+  content:'Hi';
+  position:absolute;
+  bottom:-15px;right:-20px;
+  background:#50505a;
+  color:#fff;
+  width:320px;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  box-shadow:10px 10px 40px -14px #000}
+span{
+  margin:0 5px 0 15px
+}*/
+/*additional styles borrowed from https://codepen.io/leenalavanya/pen/mPWdPZ*/
+/*END STYLES FOR CONTACT PAGE*/
